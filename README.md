@@ -51,3 +51,25 @@ A possible real-world application is an agriculture support system that can auto
 
 **How can this system be integrated into a mobile or web application?**  
 The trained model can be integrated into a mobile or web application where users can upload or capture images of vegetable crops. The system will process the image and display the predicted classification result.
+
+# Enhancing Model Performance: Visualization, Overfitting Control, Data Augmentation, and Model Deployment
+
+## How I Would Explain It
+
+### Visualizing Training and Validation Performance
+“First, I trained the CNN model with my dataset. While it was training, I plotted **accuracy** and **loss** graphs for both the training and validation data. These graphs help me see how well my model is learning. For example, if the training accuracy keeps going up but the validation accuracy stops improving, it’s a sign something is wrong.”
+
+### Understanding Overfitting
+“Overfitting happens when the model learns the training data too well but fails to generalize to new images. I can tell it’s overfitting when the training accuracy is high but the validation accuracy is much lower, or when the validation loss starts increasing while training loss keeps decreasing.”
+
+### Applying Data Augmentation
+“To make my model more robust, I applied **data augmentation**. This means I modified my images slightly—like rotating, flipping, zooming, or shifting them—so the model sees more variations. This prevents the model from memorizing the training images and helps it perform better on unseen images.”
+
+### Using Dropout to Reduce Overfitting
+“I also added **dropout layers** in my CNN. Dropout randomly ignores some neurons during training, which forces the model to learn more general features instead of memorizing details. This is another way to reduce overfitting.”
+
+### Retraining and Evaluating the Improved Model
+“After adding augmentation and dropout, I retrained my CNN. I then compared the new accuracy and loss graphs to my previous model. I could see that the validation accuracy improved, and the gap between training and validation performance became smaller, which is a good sign.”
+
+### Predicting Classes on New Images
+“Finally, I tested the trained model on new images that weren’t part of the training data. The model predicted the classes, and I checked whether they were correct. This step shows whether my improvements actually helped the model generalize.”
