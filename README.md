@@ -73,3 +73,6 @@ The trained model can be integrated into a mobile or web application where users
 
 ### Predicting Classes on New Images
 “Finally, I tested the trained model on new images that weren’t part of the training data. The model predicted the classes, and I checked whether they were correct. This step shows whether my improvements actually helped the model generalize.”
+# Build the CNN
+# Build and improved CNN Model
+# Save and Reuse the Model
